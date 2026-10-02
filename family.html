@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hello Maa Baba Rimil ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(
+                45deg,
+                #ff416c,
+                #ff4b2b,
+                #7b2ff7,
+                #00c6ff
+            );
+
+            background-size: 400% 400%;
+            animation: background 8s infinite;
+        }
+
+        @keyframes background {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .box {
+            position: relative;
+            z-index: 10;
+
+            padding: 50px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.18);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 30px;
+
+            box-shadow: 0 0 50px rgba(255,255,255,0.4);
+
+            backdrop-filter: blur(10px);
+
+            animation: box 3s ease-in-out infinite;
+        }
+
+        @keyframes box {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        h1 {
+            margin: 0;
+
+            color: white;
+
+            font-size: clamp(35px, 8vw, 80px);
+
+            animation: textGlow 1.5s infinite alternate;
+        }
+
+        @keyframes textGlow {
+            from {
+                text-shadow:
+                    0 0 5px white,
+                    0 0 10px #ff00ff;
+            }
+
+            to {
+                text-shadow:
+                    0 0 10px white,
+                    0 0 30px #00ffff,
+                    0 0 60px #00ffff;
+            }
+        }
+
+        .heart {
+            font-size: 60px;
+            display: inline-block;
+
+            animation: heart 1s infinite;
+        }
+
+        @keyframes heart {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.4);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .floating {
+            position: absolute;
+            bottom: -100px;
+
+            font-size: 30px;
+
+            animation: float 7s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-120vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .f1 {
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .f2 {
+            left: 20%;
+            animation-delay: 2s;
+        }
+
+        .f3 {
+            left: 40%;
+            animation-delay: 4s;
+        }
+
+        .f4 {
+            left: 60%;
+            animation-delay: 1s;
+        }
+
+        .f5 {
+            left: 80%;
+            animation-delay: 3s;
+        }
+
+        .f6 {
+            left: 95%;
+            animation-delay: 5s;
+        }
+
+        .star {
+            position: absolute;
+            color: white;
+            font-size: 30px;
+
+            animation: star 2s infinite alternate;
+        }
+
+        @keyframes star {
+            from {
+                opacity: 0.2;
+                transform: scale(0.5) rotate(0deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1.5) rotate(180deg);
+            }
+        }
+
+        .s1 {
+            top: 10%;
+            left: 10%;
+        }
+
+        .s2 {
+            top: 20%;
+            right: 10%;
+            animation-delay: 0.5s;
+        }
+
+        .s3 {
+            bottom: 15%;
+            left: 15%;
+            animation-delay: 1s;
+        }
+
+        .s4 {
+            bottom: 10%;
+            right: 15%;
+            animation-delay: 1.5s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="floating f1">❤️</div>
+    <div class="floating f2">💖</div>
+    <div class="floating f3">💕</div>
+    <div class="floating f4">💗</div>
+    <div class="floating f5">💓</div>
+    <div class="floating f6">💝</div>
+
+    <!-- Sparkles -->
+    <div class="star s1">✨</div>
+    <div class="star s2">⭐</div>
+    <div class="star s3">✨</div>
+    <div class="star s4">🌟</div>
+
+    <!-- Main message -->
+    <div class="box">
+
+        <div class="heart">❤️</div>
+
+        <h1>
+            hello maa, baba, rimil
+        </h1>
+
+        <div class="heart">❤️</div>
+
+    </div>
+
+</body>
+</html>
